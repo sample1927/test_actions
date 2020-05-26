@@ -13,7 +13,7 @@ LDFLAGS = -1m
 all: $(TARGET)
 
 $(TARGET): $(OBJS) $(HEDS)
- $(CXX) $(LDFLAGS) -o $@ $(OBJS)
+  $(CXX) $(LDFLAGS) -o $@ $(OBJS)
  
  run: all
     @./$(TARGET)
@@ -27,3 +27,5 @@ $(TARGET): $(OBJS) $(HEDS)
     $(RN) $(OBJS) $(TARGET)
     
  -include $(DEPS)
+ 
+ 
