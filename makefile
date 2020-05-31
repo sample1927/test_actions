@@ -20,7 +20,7 @@ run: all
 
 .PHONY: depend clean
 depend:
-  $(CXX) $(INCLUDS) -MM $(SRCS) > $(DEPS)
+	$(CXX)	$(INCLUDS)	-MM	$(SRCS)	> $(DEPS)
   @sed -i -E "s/^(.+?).o: ([^ ]+?)\1/\2\1.o: \2\1/g" $(DEPS)
 
 clean:
